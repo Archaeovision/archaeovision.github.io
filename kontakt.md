@@ -3,6 +3,5 @@ layout: default
 title: Kontakt
 ---
 # Kontakt
-Tere
 
-Oooo
+Oleme kõikjal
