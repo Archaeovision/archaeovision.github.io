@@ -16,4 +16,4 @@ Everything we do is grounded in our core values:
 
 At Archaeovision, we focus on purpose-driven technology. Our skilled team could work anywhere, but we choose projects that ignite our passion for sharing the stories of where we’ve been. We aspire to give back more than we take.
 
-<h3>If our values resonate with you, we would be honored to explore how we can partner to enrich access to the artifacts you preserve. Let's connect and see how together we can help human heritage thrive.</h3>
+<h3>If our values resonate with you, we would be honored to explore how we can partner to enrich access to our shared heritage.</h3>
