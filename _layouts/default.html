@@ -1,20 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/kontakt">Kontakt</a>
-    </nav>
-    <section>
-      {{ content }}
-    </section>
-    <footer>
-      Kirjuta: <a href="mailto:info@archaeovision.eu">info@archaeovision.eu</a>
-    </footer>
+    <header>
+      <nav>
+        <div>
+          <a class="brand" href="{{ site.url | default: '/' }}">
+            <img
+              src="{{ 'assets/logo.svg' | relative_url }}"
+              alt="Archaeovision"
+              width="50"
+              height="50"
+            />
+          </a>
+          <div>
+            <ul>
+              {% for item in site.data.navigation %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section>{{ content }}</section>
+      <footer>
+        
+        <a href="mailto:info@archaeovision.eu">info@archaeovision.eu</a>
+      </footer>
+    </div>
   </body>
 </html>

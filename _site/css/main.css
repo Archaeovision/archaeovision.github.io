@@ -1,0 +1,83 @@
+body {
+  background-color: #e6ff84;
+  font-family: Helvetica, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  border-bottom: 2px solid #000;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 38px;
+  margin: 0.5rem 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+em {
+  font-style: italic;
+  background-color: rgb(120, 145, 24);
+  color: white;
+  border: 1px solid rgb(60, 74, 1);
+  border-radius: 8px;
+  padding: 0.2em 0.4em;
+  font-style: normal;
+  line-height: 2em;
+}
+
+nav .brand {
+  background-color: #fff;
+  padding: 1rem;
+  border-right: 2px solid #000;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0;
+  height: 89px;
+}
+nav li {
+  margin-left: 20px;
+  padding-left: 1rem;
+  border-left: 2px solid #000;
+}
+nav li a {
+  display: block;
+  padding-top: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
