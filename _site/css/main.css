@@ -21,6 +21,23 @@ header {
   margin: 0 auto;
   padding: 1rem;
   max-width: 900px;
+  border-left: 2px solid #000;
+}
+.container#services table {
+  width: 100%;
+}
+.container#services table th,
+.container#services table td {
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+.container#services table th img,
+.container#services table td img {
+  border: 2px solid #000;
+}
+.container#services table th {
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -66,18 +83,46 @@ nav a {
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0 1rem;
+  margin: 0;
   padding: 0;
   height: 89px;
 }
 nav li {
-  margin-left: 20px;
   padding-left: 1rem;
   border-left: 2px solid #000;
+  padding-right: 1rem;
 }
 nav li a {
   display: block;
   padding-top: 2rem;
+}
+nav li:hover, nav li.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero {
+  height: 200px;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  background-image: url("../assets/3d.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.hero img {
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.footer {
+  border-top: 2px solid #000;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

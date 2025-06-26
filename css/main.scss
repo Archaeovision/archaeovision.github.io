@@ -3,7 +3,8 @@
 
 // Variables
 $body-bg: #e6ff84;
-$font-stack: Helvetica, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+$font-stack: Helvetica, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+  sans-serif;
 $base-font-size: 18px;
 $h1-font-size: 48px;
 $h2-font-size: 38px;
@@ -22,17 +23,34 @@ header {
   border-bottom: 2px solid #000;
 }
 
-
 @media (min-width: 992px) {
   .navbar-expand-lg {
-      flex-wrap: nowrap;
-      justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 .container {
   margin: 0 auto;
   padding: 1rem;
   max-width: 900px;
+  border-left: 2px solid #000;
+  &#services {
+    table {
+      width: 100%;
+      th,
+      td {
+        padding: 0.5rem;
+        text-align: left;
+        vertical-align: top;
+        img {
+          border: 2px solid #000;
+        }
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    }
+  }
 }
 
 h1 {
@@ -61,7 +79,6 @@ em {
   line-height: 2em;
 }
 
-
 nav {
   .brand {
     background-color: #fff;
@@ -83,21 +100,48 @@ nav {
 
   // Styles for the menu
   ul {
-    display: flex;      // Make list items appear horizontally
-    list-style: none;   // Remove default bullets
-    margin: 0 1rem;
+    display: flex; // Make list items appear horizontally
+    list-style: none; // Remove default bullets
+    margin: 0;
     padding: 0;
-    height:89px
+    height: 89px;
   }
 
   // Space out the menu items
   li {
-    margin-left: 20px;  // Adjust spacing as needed
     padding-left: 1rem;
     border-left: 2px solid #000;
+    padding-right: 1rem;
     a {
       display: block;
       padding-top: 2rem;
     }
+    &:hover,
+    &.active {
+      background-color: #000;
+      color: #fff;
+    }
   }
+}
+.hero {
+  height: 200px;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  background-image: url("../assets/3d.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+}
+.footer {
+  border-top: 2px solid #000;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  height: 50px;
 }

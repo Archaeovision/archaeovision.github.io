@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a class="brand" href="{{ site.url | default: '/' }}">
+            <img
+              src="{{ 'assets/logo.svg' | relative_url }}"
+              alt="Archaeovision"
+              width="50"
+              height="50"
+            />
+          </a>
+          <div>
+            <ul>
+              {% for item in site.data.navigation %}
+              {% capture new_url %}{{item.url}}.html{% endcapture %}
+              <li  {% if page.url == new_url %} class="active"{% endif %}><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="hero"></div>
+    <div class="container" id="{{ page.slug }}">
+        <section>{{ content }}</section>
+      
+    </div>
+    <div class="footer">footer</div>
+  </body>
+</html>

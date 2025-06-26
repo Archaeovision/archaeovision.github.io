@@ -20,19 +20,17 @@
           <div>
             <ul>
               {% for item in site.data.navigation %}
-              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% capture new_url %}{{item.url}}.html{% endcapture %}
+              <li  {% if page.url == new_url %} class="active"{% endif %}><a href="{{ item.url }}">{{ item.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container">
+    <div class="container" id="{{ page.slug }}">
       <section>{{ content }}</section>
-      <footer>
-        
-        <a href="mailto:info@archaeovision.eu">info@archaeovision.eu</a>
-      </footer>
     </div>
+    <div class="footer">footer</div>
   </body>
 </html>
