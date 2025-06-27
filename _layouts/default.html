@@ -21,7 +21,7 @@
             <ul>
               {% for item in site.data.navigation %}
               {% capture new_url %}{{item.url}}.html{% endcapture %}
-              <li  {% if page.url == new_url %} class="active"{% endif %}><a href="{{ item.url }}">{{ item.title }}</a></li>
+              <li  {% if page.url == new_url %} class="active"{% endif %}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
